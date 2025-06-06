@@ -25,6 +25,7 @@ jobs:
         uses: dtolnay/rust-toolchain@stable
         with:
           toolchain: stable
+          targets: x86_64-win7-windows-gnu, x86_64-win7-windows-msvc
 
       - name: Build
         run: cargo build --release
